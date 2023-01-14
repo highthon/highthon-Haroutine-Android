@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.haroutine_android.dto.response.seokgyu.GetRoutineResponse" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="25dp"
+        android:background="@drawable/routine_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="@{item.title}"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            tools:text="수험생 운동 루틴" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="@{item.content}"
+            tools:text="현재 고3 수능준비하고있는 수험생입니다.\n모의고사 100점의 비결을 알고싶다면?!"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="#수험생  #열공"
+            android:fontFamily="@font/pretendard_regular"
+            android:layout_marginBottom="5dp"
+            android:textColor="#5891FF"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="지인호 9:00 am - 10:00 pm"
+            android:textColor="@color/black"
+            android:fontFamily="@font/pretendard_regular"/>
+
+    </LinearLayout>
+</layout>
